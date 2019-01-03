@@ -1,0 +1,28 @@
+{
+  "name": "newsscraper",
+  "version": "1.0.0",
+  "description": "KU Coding Bootcamp Assignment \"All the News That's Fit to Scrape\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelH94/NewsScraper.git"
+  },
+  "author": "Michael Haggard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelH94/NewsScraper/issues"
+  },
+  "homepage": "https://github.com/MichaelH94/NewsScraper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.1",
+    "path": "^0.12.7"
+  }
+}
