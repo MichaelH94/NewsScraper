@@ -1,15 +1,11 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 const Comments = require('../models/comments.js');
 const Articles = require('../models/articles.js');
 
-let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-mongoose.Promise = global.Promise;
-mongoose.connect(MONGODB_URI);
 
 
 // Routes go below

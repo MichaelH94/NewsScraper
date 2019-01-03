@@ -1,7 +1,7 @@
 // Requirements
 const express = require('express');
 const exphbs = require('express-handlebars');
-const path = require('path');
+const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 8080; 
 const app = express();
 const mongoose = require('mongoose');
@@ -12,7 +12,7 @@ mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
 // Express configurations
-app.use(express.urlencoded({
+app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(express.json());
@@ -24,7 +24,6 @@ app.use(express.static(
 app.engine("handlebars", exphbs({
     defaultLayout: "main"
 }));
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "handlebars");
 
 const scraper = require("./controllers/scraper.js");
