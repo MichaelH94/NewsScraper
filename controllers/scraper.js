@@ -13,13 +13,13 @@ const Articles = require('../models/articles.js');
 // Index
 router.get('/', (req, res) => {
     res.redirect('index');
-//    Articles.find({}, null, {sort: {_id: -1}}, (err, data) => {
-//        if(data.length === 0) {
-//            res.render("empty", {msg: "No articles have been scraped. Click Scrape to get the latest News."})
-//        } else {
-//            res.redirect('index', {articles: data});
-//        }
-//    })
+   Articles.find({}, null, {sort: {_id: -1}}, (err, data) => {
+       if(data.length === 0) {
+           res.render("empty", {msg: "No articles have been scraped. Click Scrape to get the latest News."})
+       } else {
+           res.render('index', {articles: data});
+       }
+   })
 });
 
 // Scrape
