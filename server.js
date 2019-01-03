@@ -4,6 +4,12 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const PORT = process.env.PORT || 8080; 
 const app = express();
+const mongoose = require('mongoose');
+
+let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
 
 // Express configurations
 app.use(express.urlencoded({
