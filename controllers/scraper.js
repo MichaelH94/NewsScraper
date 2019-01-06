@@ -81,7 +81,7 @@ router.post('/save/:id', (req, res) => {
                 res.redirect('/');
             });
         } else {
-            Article.findByIdAndUpdate(req.params.id, {$set: {saved: true}}, {new: true}, (err, data) => {
+            Articles.findByIdAndUpdate(req.params.id, {$set: {saved: true}}, {new: true}, (err, data) => {
                 res.redirect("/"); 
             });
         }
