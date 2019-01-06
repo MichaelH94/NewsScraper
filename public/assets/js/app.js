@@ -3,7 +3,7 @@
 function displayComment(e) {
 	e.preventDefault();
 	let id = $(this).attr("value");
-	$("#commentArea").fadeIn(300).css("display", "flex");
+	$("#commentArea").modal();
 	$("#addComment").attr("value", id);
 	$.get("/" + id, (data) => {
 		$("#artTitle").text(data.title);
@@ -17,9 +17,9 @@ function displayComment(e) {
 
 }
 
-$(document).on("click", "#addComment", displayComment);
+// $(document).on("click", "#addComment", displayComment);
 
-$(document).on("click", "#close", (e) => {
+$(document).on("click", "#closeComm", (e) => {
     e.preventDefault();
     $("#addnote").fadeOut(300);
 })
