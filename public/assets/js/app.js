@@ -3,7 +3,7 @@
 function displayComment(e) {
 	e.preventDefault();
 	let id = $(this).attr("value");
-	$("#commentArea").modal('show');
+	$("#commentArea").fadeIn(300).css("display", "flex");
 	$("#addComment").attr("value", id);
 	$.get("/" + id, (data) => {
 		$("#artTitle").text(data.title);

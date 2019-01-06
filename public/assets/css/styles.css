@@ -45,10 +45,3 @@ a, a:visited, a:hover {
     z-index: 4;
 }
 
-.modal-content {
-    background-color: rgba(47, 102,56, 0.507);
-    opacity: 90%;
-    text-shadow: 2px 1px black;
-}
-
-
