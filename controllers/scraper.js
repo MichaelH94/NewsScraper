@@ -90,7 +90,7 @@ router.post('/save/:id', (req, res) => {
 
 // Display article by ID: can be used for API viewing, also comments
 router.get("/:id", (req, res) => {
-	Article.findById(req.params.id, (err, data) => {
+	Articles.findById(req.params.id, (err, data) => {
 		res.json(data);
 	})
 })
@@ -100,7 +100,7 @@ router.post("/comment/:id", function(req, res) {
 	var note = new Comments(req.body);
 	note.save((err, data) => {
 		if (err) throw err;
-		Article.findByIdAndUpdate(req.params.id, {$set: {"comment": doc._id}}, {new: true}, (err, data) => {
+		Articles.findByIdAndUpdate(req.params.id, {$set: {"comment": doc._id}}, {new: true}, (err, data) => {
 			if (err) throw err;
 			else {
 				res.send(data);
