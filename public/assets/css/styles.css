@@ -7,6 +7,10 @@ body {
 	background-color: gray;
 }
 
+.articlecard {
+    background-color: lightgray;
+}
+
 #nSH {
 	left: 0;
 	top: 0;
@@ -17,17 +21,16 @@ body {
     color: white;
 }
 
-
 #nSH button {
 	float: left;
-	font-size: 20px;
-	color: #fff;
-	height: 100%;
+    font-size: 20px;
+    color: gray;
+	height: 50%;
 	min-width: 75px;
 	padding: 20px
 }
 
-#commentArea{
+#commentArea {
 	display: none;
 	justify-content: center;
 	align-items: center;
