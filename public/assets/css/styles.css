@@ -7,8 +7,9 @@ body {
 	background-color: gray;
 }
 
-.articlecard {
-    background-color: lightgray;
+a, a:visited, a:hover {
+    color: white;
+    text-shadow: 1px black;
 }
 
 #nSH {
@@ -29,6 +30,12 @@ body {
 	min-width: 75px;
 	padding: 20px
 }
+
+.articlecard {
+    background-color: lightgray;
+    padding: 5px;
+}
+
 
 #commentArea {
 	display: none;
