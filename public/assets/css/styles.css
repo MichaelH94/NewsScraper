@@ -4,19 +4,23 @@
 }
 
 body {
-	background-color: #eee;
+	background-color: gray;
 }
 
 #nSH {
-	position: fixed;
+
 	left: 0;
 	top: 0;
 	display: block;
 	width: 100%;
 	height: 70px;
-	box-shadow: 0 0 10px #aaa;
-	background-color: #7a91a8;
-	opacity: 0.9;
+	background-color: darkslategray;
+}
+
+#nSH h3 {
+    margin: auto;
+    color: white;
+    outline: black 2px;
 }
 
 #nSH button {
@@ -26,18 +30,6 @@ body {
 	height: 100%;
 	min-width: 150px;
 	padding: 0 15px;
-}
-
-
-.message {
-	width: 100%;
-	border-radius: 5px;
-	box-shadow: 0 0 10px #aaa;
-	margin: auto;
-	text-align: center;
-	padding: 40px 90px;
-	color: #aaa;
-	background-color: #fff;
 }
 
 #commentArea{
@@ -108,17 +100,3 @@ body {
 	margin-bottom: 200px;
 }
 
-footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	padding: 10px;
-	width: 100%;
-	text-align: center;
-	background-color: #aaa;
-	color: #ddd;
-	font-size: 15px;
-	border-top: 8px solid #3e9cfc;
-	opacity: 0.7;
-	z-index: 3;
-}
