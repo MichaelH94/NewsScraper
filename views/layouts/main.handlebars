@@ -11,6 +11,8 @@
   <body>
     <div class="container-fluid" id="nSH">
     <div class="row">
+      <div class="col-6"></div>
+      <div class="col-6 text-center">
     <form action="/scrape" method="GET">
         <button type="button" class="btn btn-success">Scrape</button>
     </form>
@@ -21,12 +23,30 @@
   </div>
   <div class="jumbotron">
     <h2>New York Times Scraper</h2>
+    </div>
   </div>
   </div>
 
     <div class="container">
         {{{ body }}}
     </div>
+
+
+<div id="commentArea">
+		<div id="comments">
+			<h3>Article: <span id="artTitle"></span></h3>
+			<div id="note">
+				<label for="commTitle">Title</label><br>
+				<input type="text" placeholder="Title" name="commTitle" id="commtitle"><br>
+				<label for="commTxt">Leave a comment</label><br>
+				<textarea rows="7" placeholder="Use this to leave a comment on this article" id="commTxt"></textarea>
+        <br>
+
+				<button type="submit" id="newComment">Save Comment</button>
+				<button type="button" id="close">Close</button>
+			</div>
+		</div>
+	</div>
 
   </body>
 

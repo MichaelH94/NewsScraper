@@ -1,6 +1,6 @@
 /* Styles for NYT NewsScraper */
 
-#nsh {
+#nSH {
     color: white;
     text-shadow: 2px 2px;
     background-color: darkslategray;
@@ -9,4 +9,9 @@
 
 .jumbotron {
     background-image: "../img/hero-bg.jpg"
+}
+
+.articlecard {
+    background-color: lightgreen;
+    color: black;
 }
