@@ -1,17 +1,197 @@
-/* Styles for NYT NewsScraper */
+* {
+	box-sizing: border-box;
+	line-height: 200%;
+}
+
+body {
+	background-color: #eee;
+}
+
+button {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
 
 #nSH {
-    color: white;
-    text-shadow: 2px 2px;
-    background-color: darkslategray;
+	display: inline;
+}
+
+#nSH {
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 70px;
+	box-shadow: 0 0 10px #aaa;
+	background-color: #7a91a8;
+	opacity: 0.9;
+}
+
+#nSH button {
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	height: 100%;
+	min-width: 150px;
+	padding: 0 15px;
 }
 
 
-.jumbotron {
-    background-image: "../img/hero-bg.jpg"
+#sitename {
+	float: left;
+	padding: 15px 11px;
+	height: 100%;
+	background-color: #92afcc;
+	font-size: 23px;
+	font-weight: bold;
+	color: #fff;
+	opacity: 0.7;
 }
 
-.articlecard {
-    background-color: lightgreen;
-    color: black;
+#cover {
+	width: 100%;
+}
+
+.story-body {
+	margin: auto;
+	width: 95%;
+	min-height: 200px;
+	box-shadow: 0 0 10px #aaa;
+	background-color: #fff;
+}
+
+.story-body h2 {
+	background-color: #3e9cfc;
+}
+
+.story-body a {
+	float: left;
+	display: block;
+	width: 77%;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.story-body button {
+	display: inline;
+	min-width: 128px;
+	background-color: #77b9fd;
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.story-body button:hover {
+	background-color: #aed4fb;
+	box-shadow: 0 0 10px #fff;
+}
+
+.story-body summary {
+	float: left;
+	width: 80%;
+	padding: 0px 20px;
+}
+
+.story-body img {
+	display: inline-block;
+	width: 200px;
+}
+
+.message {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #aaa;
+	margin: auto;
+	text-align: center;
+	padding: 40px 90px;
+	color: #aaa;
+	background-color: #fff;
+}
+
+#commentArea{
+	display: none;
+	justify-content: center;
+	align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 4;
+}
+
+#comm {
+	padding: 0 20px 20px 20px;
+}
+
+#ncomments {
+	width: 700px;
+	background-color: #fff;
+	z-index: 5;
+}
+
+#comments h3 {
+	padding: 0 20px;
+	margin: 0;
+	background-color: #93d2f7;
+	color: #3181d3;
+}
+
+#comments label {
+	color: #aaa;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#comments button {
+	min-width: 128px;
+	background-color: #77b9fd;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0 10px;
+	border-radius: 5px
+}
+
+#comments button:hover {
+	background-color: #aed4fb;
+	box-shadow: 0 0 10px #fff;
+}
+
+#commTitle {
+	width: 100%;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	font-size: 15px;
+}
+
+#commBody {
+	width: 100%;
+	padding: 5px;
+	font-size: 15px;
+}
+
+#container {
+	margin-bottom: 200px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: #aaa;
+	color: #ddd;
+	font-size: 15px;
+	border-top: 8px solid #3e9cfc;
+	opacity: 0.7;
+	z-index: 3;
 }
