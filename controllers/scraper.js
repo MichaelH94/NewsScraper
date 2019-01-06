@@ -89,14 +89,14 @@ router.post('/save/:id', (req, res) => {
 })
 
 // Display article by ID: can be used for API viewing, also comments
-app.get("/:id", (req, res) => {
+router.get("/:id", (req, res) => {
 	Article.findById(req.params.id, (err, data) => {
 		res.json(data);
 	})
 })
 
 // Post a new comment
-app.post("/comment/:id", function(req, res) {
+router.post("/comment/:id", function(req, res) {
 	var note = new Comments(req.body);
 	note.save((err, data) => {
 		if (err) throw err;
