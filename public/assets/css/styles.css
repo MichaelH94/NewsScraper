@@ -9,7 +9,7 @@ body {
 
 a, a:visited, a:hover {
     color: white;
-    text-shadow: 1px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #nSH {
@@ -20,13 +20,14 @@ a, a:visited, a:hover {
 	height: 70px;
     background-color: darkslategray;
     color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #nSH button {
 	float: left;
     font-size: 20px;
     color: gray;
-	height: 50%;
+	height: 40px;
 	min-width: 75px;
 	padding: 20px
 }
@@ -34,6 +35,9 @@ a, a:visited, a:hover {
 .articlecard {
     background-color: lightgray;
     padding: 5px;
+    border-color: black;
+    border-style: dashed;
+    border-width: 1px;
 }
 
 
