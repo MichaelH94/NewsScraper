@@ -7,19 +7,6 @@ body {
 	background-color: #eee;
 }
 
-button {
-	border: 0;
-}
-
-a {
-	text-decoration: none;
-	color: #fff;
-}
-
-#nSH {
-	display: inline;
-}
-
 #nSH {
 	position: fixed;
 	left: 0;
@@ -41,66 +28,6 @@ a {
 	padding: 0 15px;
 }
 
-
-#sitename {
-	float: left;
-	padding: 15px 11px;
-	height: 100%;
-	background-color: #92afcc;
-	font-size: 23px;
-	font-weight: bold;
-	color: #fff;
-	opacity: 0.7;
-}
-
-#cover {
-	width: 100%;
-}
-
-.story-body {
-	margin: auto;
-	width: 95%;
-	min-height: 200px;
-	box-shadow: 0 0 10px #aaa;
-	background-color: #fff;
-}
-
-.story-body h2 {
-	background-color: #3e9cfc;
-}
-
-.story-body a {
-	float: left;
-	display: block;
-	width: 77%;
-	color: #fff;
-	padding-left: 10px;
-}
-
-.story-body button {
-	display: inline;
-	min-width: 128px;
-	background-color: #77b9fd;
-	color: #fff;
-	font-weight: bold;
-	font-size: 22px;
-}
-
-.story-body button:hover {
-	background-color: #aed4fb;
-	box-shadow: 0 0 10px #fff;
-}
-
-.story-body summary {
-	float: left;
-	width: 80%;
-	padding: 0px 20px;
-}
-
-.story-body img {
-	display: inline-block;
-	width: 200px;
-}
 
 .message {
 	width: 100%;
