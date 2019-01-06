@@ -17,7 +17,7 @@ function displayComment(e) {
 
 }
 
-// $(document).on("click", "#addComment", displayComment);
+$(document).on("click", "#addComment", displayComment);
 
 $(document).on("click", "#closeComm", (e) => {
     e.preventDefault();
