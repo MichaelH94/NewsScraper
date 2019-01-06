@@ -5,12 +5,7 @@
     <a href="{{this.url}}" target="_blank">{{this.title}}</a>
     <form action="/save/{{this.id}}" method="POST"> 
     <button type="submit" class="btn btn-secondary btn-sm">
-        {{if this.saved}} 
-        Delete Save
-        {{/if}}
-        {{else}}
         Save Article
-        {{/else}}
         </button>
     <button type="button" class="btn btn-secondary btn-sm" value="{{this._id}}">Add Comment</button>
 

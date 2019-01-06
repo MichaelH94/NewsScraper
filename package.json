@@ -23,6 +23,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "mongoose": "^5.4.1",
-    "path": "^0.12.7"
+    "npm": "^6.5.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   }
 }

@@ -1,6 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const express = require('express');
+var request = require('request');
 const router = express.Router();
 const Comments = require('../models/comments.js');
 const Articles = require('../models/articles.js');
@@ -56,8 +57,8 @@ router.get('/scrape', (req, res) => {
                 };
             });
         });
-        res.redirect('/');
     });
+    res.redirect('/');
 });
 
 // Saved articles
@@ -84,3 +85,6 @@ router.post('/save/:id', (req, res) => {
         }
     })
 })
+
+
+module.exports = router;
