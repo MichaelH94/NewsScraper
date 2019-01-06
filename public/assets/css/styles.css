@@ -28,8 +28,8 @@ body {
 	font-size: 20px;
 	color: #fff;
 	height: 100%;
-	min-width: 150px;
-	padding: 0 15px;
+	min-width: 75px;
+	padding: 20px
 }
 
 #commentArea{
