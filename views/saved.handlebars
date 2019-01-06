@@ -1,15 +1,16 @@
 {{#each saved}}
-<div class="articlecard" id={{this._id}}>
+<div class="articlecard text-center" id={{this._id}}>
 
 <h2>
     <a href="{{this.url}}" target="_blank">{{this.title}}</a>
-    <form action="/save/{{this.id}}" method="POST"> 
-    <button type="button" class="btn btn-secondary btn-sm" value="{{this._id}}">Add Comment</button>
-    </form>
+
 </h2>
 <img class="media" src="{{this.img}}">
 <p class="articlesummary">
     {{this.summary}}
 </p>
+<form action="/save/{{this.id}}" method="POST"> 
+    <button type="button" class="btn btn-secondary btn-sm" value="{{this._id}}">Add Comment</button>
+    </form>
 </div>
 {{/each}}

@@ -19,9 +19,11 @@ function displayComment(e) {
 
 $(document).on("click", "#addComment", displayComment);
 
-$("#close").on("click", () => {
-	$("#addnote").fadeOut(300);
-});
+$(document).on("click", "#close", (e) => {
+    e.preventDefault();
+    $("#addnote").fadeOut(300);
+})
+
 
 function newComment(e) {
 	e.preventDefault();
