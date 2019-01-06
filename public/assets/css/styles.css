@@ -8,20 +8,15 @@ body {
 }
 
 #nSH {
-
 	left: 0;
 	top: 0;
 	display: block;
 	width: 100%;
 	height: 70px;
-	background-color: darkslategray;
+    background-color: darkslategray;
+    color: white;
 }
 
-#nSH h3 {
-    margin: auto;
-    color: white;
-    outline: black 2px;
-}
 
 #nSH button {
 	float: left;
@@ -49,7 +44,7 @@ body {
 	padding: 0 20px 20px 20px;
 }
 
-#ncomments {
+#comments {
 	width: 700px;
 	background-color: #fff;
 	z-index: 5;
