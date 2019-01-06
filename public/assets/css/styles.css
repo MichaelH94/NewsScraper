@@ -1,0 +1,12 @@
+/* Styles for NYT NewsScraper */
+
+#nsh {
+    color: white;
+    text-shadow: 2px 2px;
+    background-color: darkslategray;
+}
+
+
+.jumbotron {
+    background-image: "../img/hero-bg.jpg"
+}
