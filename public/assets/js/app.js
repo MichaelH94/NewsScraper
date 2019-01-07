@@ -7,7 +7,7 @@ function displayComment(e) {
 	$("#addComment").attr("value", id);
 	$.get("/" + id, (data) => {
 		$("#artTitle").text(data.title);
-		$.get("/comment/" + id, function(data) {
+		$.get("/comment/" + id, (data) => {
 			if (data) {
 				$("#commTitle").val(data.commTitle);
 				$("commTxt").val(data.commTxt);
@@ -23,7 +23,7 @@ $("#closeComm").on("click", () => {
 	$("#commentArea").fadeOut(300);
 });
 
-function newComment(e)) {
+function newComment(e) {
 	e.preventDefault();
 	let id = $(this).attr("value");
 	var obj = {
