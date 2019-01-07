@@ -34,7 +34,8 @@ function newComment(e) {
 	};
 	$.post("/comment/" + id, obj, (data) => {
 		window.location.href = "/saved";
-	});
+    });
+    closeComment();
 }
 
 

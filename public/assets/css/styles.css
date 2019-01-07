@@ -21,11 +21,7 @@ a, a:visited, a:hover {
     background-color: darkslategray;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.btn {
-    margin: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 .articlecard {
