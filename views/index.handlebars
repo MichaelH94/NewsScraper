@@ -5,7 +5,7 @@
     <a href="{{this.url}}" target="_blank">{{this.title}}</a>
     
 </h2>
-<img src="{{this.img}}">
+<img src="{{this.imgURL}}">
 <p class="articlesummary">
     {{this.summary}}
 </p>
@@ -13,8 +13,9 @@
     <button type="submit" class="btn btn-secondary btn-sm">
         Save Article
         </button>
+  </form>
     <button type="button" class="btn btn-secondary btn-sm" id="addComment" value="{{this._id}}">Add Comment</button>
 
-    </form>
+    
 </div>
 {{/each}}

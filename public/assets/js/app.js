@@ -10,7 +10,7 @@ function displayComment(e) {
 		$.get("/comment/" + id, function(data) {
 			if (data) {
 				$("#commTitle").val(data.commTitle);
-				$("#commTxt").val(data.commTxt);
+				$("commTxt").val(data.commTxt);
 			}
 		});
 	});
@@ -19,13 +19,11 @@ function displayComment(e) {
 
 $(document).on("click", "#addComment", displayComment);
 
-$(document).on("click", "#closeComm", (e) => {
-    e.preventDefault();
-    $("#addnote").fadeOut(300);
-})
+$("#closeComm").on("click", () => {
+	$("#commentArea").fadeOut(300);
+});
 
-
-function newComment(e) {
+function newComment(e)) {
 	e.preventDefault();
 	let id = $(this).attr("value");
 	var obj = {
