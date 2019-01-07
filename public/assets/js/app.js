@@ -17,11 +17,13 @@ function displayComment(e) {
 
 }
 
-$(document).on("click", "#addComment", displayComment);
+function closeComment(e) {
+    e.preventDefault();
+    $("#commentArea").fadeOut(300)
+}
 
-$("#closeComm").on("click", () => {
-	$("#commentArea").fadeOut(300);
-});
+$(document).on("click", "#addComment", displayComment);
+$(document).on("click", "#closeComm", closeComment)
 
 function newComment(e) {
 	e.preventDefault();
